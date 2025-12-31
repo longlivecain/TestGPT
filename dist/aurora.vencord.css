@@ -1,0 +1,6 @@
+/**
+ * Aurora Tide (Vencord entry)
+ * Imports the source theme bundle.
+ */
+
+@import url("../src/aurora.css");

@@ -1,0 +1,103 @@
+:root {
+  --font-primary: "Nunito", "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Space Grotesk", "Nunito", "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-code: "JetBrains Mono", "Fira Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  --aurora-bg-1: #070b18;
+  --aurora-bg-2: #0c1426;
+  --aurora-bg-3: #111b33;
+  --aurora-surface: #162445;
+  --aurora-surface-alt: #1d2f56;
+  --aurora-border: #2e4a7a;
+  --aurora-border-bright: #4cc9f0;
+  --aurora-glass: rgba(8, 14, 28, 0.62);
+  --aurora-glass-strong: rgba(6, 10, 22, 0.78);
+  --aurora-glass-light: rgba(14, 24, 44, 0.54);
+
+  --aurora-text: #e4ecff;
+  --aurora-text-muted: #a8b7d8;
+  --aurora-accent: #38e1ff;
+  --aurora-accent-strong: #5b7cfa;
+  --aurora-accent-soft: #86f0ff;
+  --aurora-success: #5bde98;
+  --aurora-warning: #ffd166;
+  --aurora-danger: #ff6b6b;
+
+  --background-primary: var(--aurora-bg-2);
+  --background-secondary: var(--aurora-bg-3);
+  --background-secondary-alt: var(--aurora-bg-1);
+  --background-tertiary: #080f1f;
+  --background-accent: var(--aurora-accent-strong);
+  --background-floating: #0a1222;
+
+  --text-normal: var(--aurora-text);
+  --text-muted: var(--aurora-text-muted);
+  --text-link: var(--aurora-accent);
+  --interactive-normal: var(--aurora-text-muted);
+  --interactive-hover: var(--aurora-text);
+  --interactive-active: var(--aurora-text);
+  --interactive-muted: #6b7b9c;
+
+  --channels-default: var(--aurora-text-muted);
+  --channeltextarea-background: rgba(10, 18, 34, 0.75);
+  --input-background: rgba(10, 18, 34, 0.72);
+  --header-primary: var(--aurora-text);
+  --header-secondary: var(--aurora-text-muted);
+
+  --status-positive: var(--aurora-success);
+  --status-warning: var(--aurora-warning);
+  --status-danger: var(--aurora-danger);
+
+  --scrollbar-thin-thumb: #2d4a80;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-thumb: #2d4a80;
+  --scrollbar-auto-track: rgba(8, 14, 26, 0.6);
+  --scrollbar-auto-scrollbar-color-thumb: #2d4a80;
+  --scrollbar-auto-scrollbar-color-track: rgba(8, 14, 26, 0.6);
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-soft: 0 12px 30px rgba(6, 12, 22, 0.55);
+
+  --aurora-gradient: radial-gradient(circle at top, rgba(84, 217, 255, 0.34) 0%, rgba(12, 20, 38, 0.9) 36%, #050812 100%);
+  --aurora-gradient-strong: radial-gradient(circle at 20% 15%, rgba(110, 244, 255, 0.42) 0%, rgba(34, 62, 120, 0.55) 35%, rgba(5, 8, 16, 0.98) 100%);
+  --aurora-wallpaper: radial-gradient(circle at 12% 20%, rgba(56, 225, 255, 0.4) 0%, rgba(12, 24, 54, 0.2) 35%, transparent 60%),
+    radial-gradient(circle at 80% 10%, rgba(91, 124, 250, 0.35) 0%, rgba(10, 20, 40, 0.1) 45%, transparent 65%),
+    linear-gradient(160deg, rgba(7, 12, 26, 0.95) 0%, rgba(8, 12, 22, 0.98) 60%, #04060c 100%);
+  --aurora-glow: 0 0 32px rgba(76, 201, 240, 0.35);
+}
+
+.theme-dark {
+  --background-primary: var(--aurora-bg-2) !important;
+  --background-secondary: var(--aurora-bg-3) !important;
+  --background-secondary-alt: var(--aurora-bg-1) !important;
+  --background-tertiary: #080f1f !important;
+  --background-accent: var(--aurora-accent-strong) !important;
+  --background-floating: #0a1222 !important;
+  --background-mobile-primary: var(--aurora-bg-2) !important;
+  --background-mobile-secondary: var(--aurora-bg-3) !important;
+  --background-modifier-hover: rgba(76, 201, 240, 0.12) !important;
+  --background-modifier-active: rgba(76, 201, 240, 0.18) !important;
+  --background-modifier-selected: rgba(76, 201, 240, 0.22) !important;
+  --background-modifier-accent: rgba(76, 201, 240, 0.18) !important;
+  --channeltextarea-background: rgba(10, 18, 34, 0.75) !important;
+  --input-background: rgba(10, 18, 34, 0.72) !important;
+  --card-primary-bg: var(--aurora-glass) !important;
+  --card-secondary-bg: var(--aurora-glass-strong) !important;
+  --modal-background: var(--aurora-glass) !important;
+  --modal-footer-background: rgba(6, 10, 22, 0.72) !important;
+  --scrollbar-auto-thumb: #2d4a80 !important;
+  --scrollbar-auto-track: rgba(8, 14, 26, 0.6) !important;
+  --channels-default: var(--aurora-text-muted) !important;
+  --text-normal: var(--aurora-text) !important;
+  --text-muted: var(--aurora-text-muted) !important;
+  --text-link: var(--aurora-accent) !important;
+  --interactive-normal: var(--aurora-text-muted) !important;
+  --interactive-hover: var(--aurora-text) !important;
+  --interactive-active: var(--aurora-text) !important;
+  --interactive-muted: #6b7b9c !important;
+  --header-primary: var(--aurora-text) !important;
+  --header-secondary: var(--aurora-text-muted) !important;
+}
